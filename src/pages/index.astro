@@ -8,27 +8,8 @@ import { SITE_TITLE } from "../config";
 
 <PageLayout>
   <PageMeta title={`${SITE_TITLE}`} slot="meta" />
-  <script
-    set:html={`<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>`}
-  ></script>
   <Fragment slot="main">
     <Intro />
     <AboutTheTheme />
   </Fragment>
-  <!-- Add the redirect script at the end of the body section -->
-  <script
-    set:html={`
-    <script>
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", (user) => {
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
-            });
-          }
-        });
-      }
-    </script>
-  `}
-  ></script>
 </PageLayout>
