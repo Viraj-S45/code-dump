@@ -1,12 +1,12 @@
 ---
 external: false
-title: "GNU GENERAL PUBLIC LICENSE"
-description: "Code blocks are syntax highlighted using Prism.js"
-date: 2022-10-30
+title: "GNU - License"
+description: "Open Source GNU license"
+date: 2024-06-07
 ---
-Version 3, 29 June 2007
+Version 3, 07 June 2024
 
- Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+ Copyright (C) 2024 Viraj Shirodkar, Inc. <https://virajs.top/>
  Everyone is permitted to copy and distribute verbatim copies
  of this license document, but changing it is not allowed.
 
