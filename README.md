@@ -66,7 +66,7 @@ For detailed steps on deploying to Netlify, refer to the [Netlify Documentation]
 This project uses [Decap CMS](https://decapcms.org/docs/basic-steps/) for managing blog posts. To access the CMS, navigate to ``` /admin ``` on your deployed site. For example:
 
 ```bash
-  https://your-domain.com/admin
+  https://localhost/admin
 
 ```
 
