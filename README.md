@@ -73,7 +73,3 @@ This project uses [Decap CMS](https://decapcms.org/docs/basic-steps/) for managi
 You can then log in and manage your blog posts easily through the CMS interface.
 
 
-## License
-
-THis project is open-srouce and available under the [GNU](https://virajs.top/blog/osi-license/) License.
-
