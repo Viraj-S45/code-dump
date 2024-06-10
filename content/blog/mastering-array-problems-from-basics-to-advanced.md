@@ -8,13 +8,12 @@ description: Unleash the power of 1D arrays!  This comprehensive guide equips
   skills to the next level!
 date: 2024-06-10
 ---
-# Mastering Array Problems - From Basics to Advanced
 
 Arrays are a fundamental data structure in programming, providing a way to store and manipulate collections of data. Whether you're a beginner or an experienced programmer, solving problems involving arrays is crucial for developing strong coding skills. In this blog post, we'll explore a series of array problems, sorted by increasing difficulty, and provide solutions to each. Let's dive in!
 
 ## Level 1: Essential Operations
 
-## 1. Count Elements in an Array: How Many Elements Are There?
+### 1. Count Elements in an Array: How Many Elements Are There?
 
 Knowing the size of your array is crucial. Learn two methods to efficiently determine the number of elements in an array.
 
