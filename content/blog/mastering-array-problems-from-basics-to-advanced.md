@@ -1,14 +1,12 @@
 ---
-layout: blog
+external: false
 title: Mastering Array Problems - From Basics to Advanced
 description: Unleash the power of 1D arrays!  This comprehensive guide equips
   you with essential problems and solutions, from calculating sums and finding
   extremes to tackling advanced challenges like identifying failing students and
   optimizing for efficiency. Master the fundamentals and propel your programming
   skills to the next level!
-publishDate: 2024-06-10T17:28:00.000Z
-heroImage: https://media.geeksforgeeks.org/wp-content/uploads/20230810103814/Arrays-in-C.png
-rating: 4
+date: 2024-06-10
 ---
 # Mastering Array Problems - From Basics to Advanced
 
