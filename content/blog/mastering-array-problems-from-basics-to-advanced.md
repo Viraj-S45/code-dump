@@ -38,6 +38,8 @@ int main()
 }
 ```
 
+`this is my output`
+
 This code snippet tackles a mathematical operation on arrays: calculating the product of all its elements. It accomplishes this by:
 
 **Declaring and initializing an array:** The code creates an array named arr and assigns values to it.
@@ -110,12 +112,23 @@ using namespace std;
 int main()
 {
     int arr[5] = {4, 5, 6, 7, 8};
-    int sum = 0;
+    int max, min;
+    max = arr[0];
+    min = arr[0];
     for (int i = 0; i < size(arr); i++)
     {
-        sum += arr[i];
+        if (arr[i] > max)
+        {
+            max = arr[i];
+        }
+        else if (arr[i] < min)
+        {
+            min = arr[i];
+        }
     }
-    cout << "The sum of the elements in the array is : " << sum << endl;
+    cout << "Max value: " << max << endl
+         << "Min value: " << min << endl;
+    return 0;
 }
 ```
 
@@ -134,13 +147,16 @@ Want to find and display only elements that exceed a specific value (X)? This pr
 using namespace std;
 int main()
 {
-    int arr[5] = {4, 5, 6, 7, 8};
-    int sum = 0;
+    int arr[] = {1, 3, 5, 7, 9, 10, 13};
+    int key = 6;
     for (int i = 0; i < size(arr); i++)
     {
-        sum += arr[i];
+        if (arr[i] > key)
+        {
+            cout << arr[i] << " ";
+        }
     }
-    cout << "The sum of the elements in the array is : " << sum << endl;
+    return 0;
 }
 ```
 
@@ -155,13 +171,21 @@ This problem presents a unique challenge: calculating the difference between the
 using namespace std;
 int main()
 {
-    int arr[5] = {4, 5, 6, 7, 8};
-    int sum = 0;
+    int arr[] = {1, 2, 3, 4, 5, 6, 7, 8};
+    int sumOdd, sumEven;
+    sumOdd = 0;
+    sumEven = 0;
     for (int i = 0; i < size(arr); i++)
     {
-        sum += arr[i];
+        if (i % 2 == 0)
+        {
+            sumEven += arr[i];
+        }
+        else
+            sumOdd += arr[i];
     }
-    cout << "The sum of the elements in the array is : " << sum << endl;
+    cout << "The difference between sum of elements at odd and even indices is " << sumEven - sumOdd << endl;
+    return 0;
 }
 ```
 
@@ -176,13 +200,19 @@ Master the art of reversing an array, effectively rearranging elements from the 
 using namespace std;
 int main()
 {
-    int arr[5] = {4, 5, 6, 7, 8};
-    int sum = 0;
-    for (int i = 0; i < size(arr); i++)
+    int a[] = {4, 5, 6, 7, 8};
+    int b[size(a)];
+    int iteration = 0;
+    for (int i = size(a) - 1; i >= 0; i--)
     {
-        sum += arr[i];
+        b[iteration] = a[i];
+        iteration++;
     }
-    cout << "The sum of the elements in the array is : " << sum << endl;
+    for (int j = 0; j < size(b); j++)
+    {
+        cout << b[j] << " ";
+    }
+    return 0;
 }
 ```
 
@@ -197,13 +227,21 @@ This problem takes array manipulation a step further, instructing you to modify 
 using namespace std;
 int main()
 {
-    int arr[5] = {4, 5, 6, 7, 8};
-    int sum = 0;
+    int arr[] = {1, 2, 3, 4, 5, 6, 7, 8};
     for (int i = 0; i < size(arr); i++)
     {
-        sum += arr[i];
+        if (i % 2 == 0)
+        {
+            arr[i] += 10;
+        }
+        else
+            arr[i] *= 2;
     }
-    cout << "The sum of the elements in the array is : " << sum << endl;
+    for (int i = 0; i < size(arr); i++)
+    {
+        cout << arr[i] << " ";
+    }
+    return 0;
 }
 ```
 
@@ -218,13 +256,16 @@ Given an array of student marks, this problem helps you identify and print the r
 using namespace std;
 int main()
 {
-    int arr[5] = {4, 5, 6, 7, 8};
-    int sum = 0;
+    int arr[] = {70, 90, 67, 33, 36, 79, 22, 10};
+    cout << "Students having marks less than 35" << endl;
     for (int i = 0; i < size(arr); i++)
     {
-        sum += arr[i];
+        if (arr[i] < 35)
+        {
+            cout << "Roll no. : " << i << endl;
+        }
     }
-    cout << "The sum of the elements in the array is : " << sum << endl;
+    return 0;
 }
 ```
 
@@ -239,13 +280,21 @@ This intermediate challenge introduces the concept of finding pairs of elements 
 using namespace std;
 int main()
 {
-    int arr[5] = {4, 5, 6, 7, 8};
-    int sum = 0;
+    int arr[] = {2, 3, 4, 5, 6, 7, 8};
+    int pairs = 0;
+    int key = 9;
     for (int i = 0; i < size(arr); i++)
     {
-        sum += arr[i];
+        for (int j = i + 1; j < size(arr); j++)
+        {
+            if (arr[i] + arr[j] == key)
+            {
+                pairs++;
+            }
+        }
     }
-    cout << "The sum of the elements in the array is : " << sum << endl;
+    cout << "Pairs having sum 9 are : " << pairs << endl;
+    return 0;
 }
 ```
 
@@ -264,13 +313,25 @@ This problem goes beyond finding the largest element. Learn how to identify the 
 using namespace std;
 int main()
 {
-    int arr[5] = {4, 5, 6, 7, 8};
-    int sum = 0;
+    int arr[] = {1, 2, 3, 4, 5, 6, 7, 8};
+    int max = arr[0];
     for (int i = 0; i < size(arr); i++)
     {
-        sum += arr[i];
+        if (arr[i] > max)
+        {
+            max = arr[i];
+        }
     }
-    cout << "The sum of the elements in the array is : " << sum << endl;
+    int smax = 0;
+    for (int i = 0; i < size(arr); i++)
+    {
+        if (arr[i] > smax && arr[i] != max)
+        {
+            smax = arr[i];
+        }
+    }
+    cout << "Second Largest No. in the given array : " << smax;
+    return 0;
 }
 ```
 
@@ -281,18 +342,7 @@ This advanced technique demonstrates how to find the second largest element in a
 **Problem:** Efficiently find the second largest element in a single pass through the array.
 
 ```cpp
-#include <iostream>
-using namespace std;
-int main()
-{
-    int arr[5] = {4, 5, 6, 7, 8};
-    int sum = 0;
-    for (int i = 0; i < size(arr); i++)
-    {
-        sum += arr[i];
-    }
-    cout << "The sum of the elements in the array is : " << sum << endl;
-}
+// Pending
 ```
 
 ### 3. Find the Number of Triplets with a Given Sum: Three Elements, One Target
@@ -306,13 +356,24 @@ This problem builds upon the concept of finding pairs. Here, you'll learn how to
 using namespace std;
 int main()
 {
-    int arr[5] = {4, 5, 6, 7, 8};
-    int sum = 0;
+    int arr[] = {1, 2, 3, 4, 5, 6, 7, 8};
+    int key = 14;
+    int tripletCout = 0;
     for (int i = 0; i < size(arr); i++)
     {
-        sum += arr[i];
+        for (int j = i + 1; j < size(arr); j++)
+        {
+            for (int k = j + 1; k < size(arr); k++)
+            {
+                if (arr[i] + arr[j] + arr[k] == key)
+                {
+                    tripletCout++;
+                }
+            }
+        }
     }
-    cout << "The sum of the elements in the array is : " << sum << endl;
+    cout << "No. of triplets: " << tripletCout << endl;
+    return 0;
 }
 ```
 
