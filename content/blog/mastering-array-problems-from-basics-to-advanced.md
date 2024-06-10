@@ -22,6 +22,8 @@ Knowing the size of your array is crucial. Learn two methods to efficiently dete
 
 **Problem:** Determine the number of elements stored in an array.
 
+**Method 1:**
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -29,6 +31,19 @@ int main()
 {
     int arr[] = {1, 2, 3, 4};
     cout << "Total Elements: " << size(arr) << endl;
+    return 0;
+}
+```
+
+**Method 2**
+
+```cpp
+#include <iostream>
+using namespace std;
+int main()
+{
+    int arr[] = {1, 2, 3, 4};
+    cout << "Total Elements: " << sizeof(arr)/sizeof(arr[0]) << endl;
     return 0;
 }
 ```
