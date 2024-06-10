@@ -33,7 +33,11 @@ int main()
 }
 ```
 
-`Total Elements: 4`
+**Output:**
+
+```bash
+Total Elements: 4
+```
 
 ### 2. Find the Sum of All Elements in an Array: Calculate the Total
 
@@ -56,6 +60,12 @@ int main()
 }
 ```
 
+**Output:**
+
+```bash
+The sum of the elements in the array is : 30
+```
+
 ### 3. Find the Product of All Elements in an Array: Multiply Them All
 
 This problem delves into calculating the product (multiplication) of all elements within an array.
@@ -76,6 +86,12 @@ int main()
     cout << "Product: " << product << endl;
     return 0;
 }
+```
+
+**Output:**
+
+```bash
+Product: 24
 ```
 
 ### 4. Find the Greatest and Smallest Elements in an Array: Identify the Extremes
@@ -110,6 +126,13 @@ int main()
 }
 ```
 
+**Ouput:**
+
+```bash
+Max value: 8
+Min value: 4
+```
+
 - - -
 
 ## Level 2: Intermediate Challenges
@@ -136,6 +159,12 @@ int main()
     }
     return 0;
 }
+```
+
+**Output:**
+
+```bash
+7 9 10 13 
 ```
 
 ### 2. Find the Difference Between Sum of Elements at Even and Odd Indices: Even vs. Odd
@@ -167,6 +196,12 @@ int main()
 }
 ```
 
+**Output:**
+
+```bash
+The difference between sum of elements at odd and even indices is -4
+```
+
 ### 3. Reverse the Given Array: Flip the Order
 
 Master the art of reversing an array, effectively rearranging elements from the end to the beginning.
@@ -192,6 +227,12 @@ int main()
     }
     return 0;
 }
+```
+
+**Output:**
+
+```bash
+8 7 6 5 4
 ```
 
 ### 4. Modify Array Based on Index Conditions: Conditional Transformations
@@ -223,6 +264,12 @@ int main()
 }
 ```
 
+**Output:**
+
+```bash
+11 4 13 8 15 12 17 16
+```
+
 ### 5. Identify Students with Marks Below a Threshold: Find Failing Students
 
 Given an array of student marks, this problem helps you identify and print the roll numbers (indices) of students who scored below a specific threshold.
@@ -245,6 +292,15 @@ int main()
     }
     return 0;
 }
+```
+
+**Output:**
+
+```bash
+Students having marks less than 35
+Roll no. : 3
+Roll no. : 6
+Roll no. : 7
 ```
 
 ### 6. Find the Number of Pairs with a Given Sum: Two Elements, One Target
@@ -274,6 +330,12 @@ int main()
     cout << "Pairs having sum 9 are : " << pairs << endl;
     return 0;
 }
+```
+
+**Output:**
+
+```bash
+Pairs having sum 9 are : 3
 ```
 
 - - -
@@ -313,6 +375,12 @@ int main()
 }
 ```
 
+**Output:**
+
+```bash
+Second Largest No. in the given array : 7
+```
+
 ### 2. Find the Second Largest Element in a Single Pass: Optimize for Efficiency
 
 This advanced technique demonstrates how to find the second largest element in a single pass through the array, optimizing for efficiency.
@@ -320,7 +388,34 @@ This advanced technique demonstrates how to find the second largest element in a
 **Problem:** Efficiently find the second largest element in a single pass through the array.
 
 ```cpp
-// Pending
+#include <iostream>
+using namespace std;
+int main()
+{
+    int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+    int max = arr[0];
+    int smax = 0;
+    for (int i = 0; i < size(arr); i++)
+    {
+        if (arr[i] > max)
+        {
+            smax = max;
+            max = arr[i];
+        }
+        else if (smax < arr[i] && max != arr[i])
+        {
+            smax = arr[i];
+        }
+    }
+    cout << "Second Largest No. in the given array : " << smax;
+    return 0;
+}
+```
+
+**Output:**
+
+```bash
+Second Largest No. in the given array : 8
 ```
 
 ### 3. Find the Number of Triplets with a Given Sum: Three Elements, One Target
@@ -353,6 +448,12 @@ int main()
     cout << "No. of triplets: " << tripletCout << endl;
     return 0;
 }
+```
+
+**Output:**
+
+```bash
+No. of triplets: 6
 ```
 
 By conquering these problems, you'll gain mastery over 1D arrays, a valuable skill in programming. Feel free to explore further challenges and delve deeper into more complex array operations!
