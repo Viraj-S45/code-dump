@@ -28,25 +28,12 @@ using namespace std;
 int main()
 {
     int arr[] = {1, 2, 3, 4};
-    int product = 1;
-    for (int i = 0; i < size(arr); i++)
-    {
-        product *= arr[i];
-    }
-    cout << "Product: " << product << endl;
+    cout << "Total Elements: " << size(arr) << endl;
     return 0;
 }
 ```
 
-`this is my output`
-
-This code snippet tackles a mathematical operation on arrays: calculating the product of all its elements. It accomplishes this by:
-
-**Declaring and initializing an array:** The code creates an array named arr and assigns values to it.
-**Setting up a variable for the product:** It initializes a variable named product to store the accumulated result.
-**Looping through the array:** The code iterates through each element in the array.
-**Multiplying elements into the product:** Within the loop, it multiplies the current element's value with the running product.
-**Printing the result:** Finally, the code displays the calculated product of all elements in the array.
+`Total Elements: 4`
 
 ### 2. Find the Sum of All Elements in an Array: Calculate the Total
 
@@ -68,15 +55,6 @@ int main()
     cout << "The sum of the elements in the array is : " << sum << endl;
 }
 ```
-
-This code snippet tackles a fundamental task in arrays: calculating the total sum of all its elements. It accomplishes this by:
-
-**Declaring and initializing an array:** The code creates an array named arr and assigns values to it.
-**Setting up a variable for the sum:** It initializes a variable named sum to keep track of the total.
-**Looping through the array:** The code iterates through each element in the array.
-**Adding elements to the sum:** Within the loop, it adds the current element's value to the sum variable.
-**Printing the result:** Finally, the code displays the calculated sum of all elements in the array.\
-**Problem:** Determine the number of elements stored in an array.
 
 ### 3. Find the Product of All Elements in an Array: Multiply Them All
 
