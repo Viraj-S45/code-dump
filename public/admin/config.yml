@@ -30,5 +30,6 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "projects" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
+      - { label: "URL", name: "url", widget: "string", default: "virajs.top" }
       - { label: "Publish Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD" }
       - { label: "Body", name: "body", widget: "markdown" }
