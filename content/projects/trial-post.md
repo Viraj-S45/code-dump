@@ -1,5 +1,4 @@
 ---
-external: "false"
 layout: blog
 title: Trial Post
 description: trial descorpit
