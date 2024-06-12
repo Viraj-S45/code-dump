@@ -1,4 +1,5 @@
 ---
+external: false
 layout: blog
 title: "Mastering 2D Arrays: Essential Problems and Solutions"
 description: This comprehensive guide builds upon your knowledge of 1D arrays
