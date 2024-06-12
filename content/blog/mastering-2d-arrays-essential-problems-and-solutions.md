@@ -6,7 +6,7 @@ description: This comprehensive guide builds upon your knowledge of 1D arrays
   problems and step-by-step solutions to hone your programming skills. From
   printing matrices to complex operations like matrix multiplication and wave
   printing, this post equips you to tackle a wide range of 2D array challenges!
-date: 2024-06-12T16:06:00.000Z
+date: 2024-06-12
 ---
 Arrays are fundamental data structures in programming, and understanding them is crucial for any developer. In this post, we will delve into various 2D array problems, ordered by increasing difficulty. If you're new to arrays, consider checking out our previous post on [1D Array Problems](https://virajs.top/blog/mastering-array-problems-from-basics-to-advanced/). Let's get started!
 
