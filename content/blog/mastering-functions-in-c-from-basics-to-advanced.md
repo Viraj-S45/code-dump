@@ -1,5 +1,5 @@
 ---
-external: "false"
+external: false
 layout: blog
 title: "Mastering Functions in C++: From Basics to Advanced"
 description: Elevate your C++ skills with this comprehensive guide to functions!
