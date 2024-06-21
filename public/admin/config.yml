@@ -14,7 +14,7 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - { label: "External", name: "external", widget: "string", default: "false" }
+      - { label: "External", name: "external", widget: "hidden", default: "false" }
       - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
@@ -27,9 +27,8 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - { label: "Layout", name: "layout", widget: "hidden", default: "projects" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "URL", name: "url", widget: "string", default: "virajs.top" }
       - { label: "Publish Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "URL", name: "url", widget: "text" }
